@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 // @types
-import { BreedStateType, VoteParamsType } from '_types/product';
+import { BreedStateType, VoteParamsType } from '_types/Breed';
 
 // services
 import * as services from 'services/product';

@@ -16,10 +16,7 @@ const Loadable = (Component: ElementType) => (props: any) => (
 );
 
 // PAGE
-const ProjectList = Loadable(lazy(() => import('pages/ProjectList')));
 const MainPage = Loadable(lazy(() => import('pages/MainPage')));
-const HomePage = Loadable(lazy(() => import('pages/HomePage')));
-
 
 export default function Router() {
   return useRoutes([
@@ -27,18 +24,12 @@ export default function Router() {
       path: '/',
       element: <Navigate to="main" replace />,
     },
-    {
-      path: 'project-list',
-      element: <ProjectList />,
-    },
+
     {
       path: 'main',
       element: <MainPage />,
     },
-        {
-      path: 'home',
-      element: <HomePage />,
-    },
+      
     { path: '*', element: <Navigate to="/main" replace /> },
   ]);
 }

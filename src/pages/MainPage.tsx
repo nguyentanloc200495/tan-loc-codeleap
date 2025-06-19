@@ -165,7 +165,7 @@ export default function MainPage() {
         };
         dispatch(voteImageById(voteParams));
       }
-    }, 100);
+    }, 50);
   };
 
   const animateCardOut = (x = 0, y = 0) => {

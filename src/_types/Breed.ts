@@ -1,13 +1,3 @@
-
-
-export type GetProductsParamsType = {
-  limit: number;
-  skip: number;
-};
-export type SearchProductsParamsType = {
-  searchKey: string;
-};
-
 export type BreedStateType = {
   isLoading: boolean;
   error: Error | string | null;
@@ -26,6 +16,5 @@ export type VoteParamsType = {
   image_id: string;
   sub_id: string;
   value: number | any;
-
 };
 

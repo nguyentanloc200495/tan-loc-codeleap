@@ -1,4 +1,4 @@
-import { VoteParamsType } from '_types/product';
+import { VoteParamsType } from '_types/Breed';
 import * as endpoints from 'services/product/endpoints';
 import * as api from 'utils/axios';
 
